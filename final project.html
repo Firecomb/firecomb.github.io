@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <head>
 	<meta name="viewport" content="initial-scale=1,user-scalable=no">
-	<title>synthesis.js - MIDI / MML Synthesizer</title>
+	<title>CTP431 Final Project</title>
 	<link  href='final.css' rel='stylesheet'>
 	<script src="nexusUI.js"></script>
 	<script src="synth.js"></script>
@@ -15,11 +15,10 @@
 <body>
 	
 	<header>
-		<h1>synthesis.js - MIDI / MML Synthesizer (WIP)</h1>
-		<p>Web Audio API and Web MIDI API experiment works on Chrome, Edge and iOS Safari.<br>
-		The features are very limited for now. Currently you can:</p>
+		<h1>CTP431 Final Project : Simple MML Player with FM Synthesizer</h1>
+		<p>Can Play Simple MML Code Music, with Custom Synthesizer.</p>
 		<p>- play with MIDI keyboard<br>
-		- play with PC keys (C key = C4, Space = Damper pedal)<br>
+		- play with PC keys (C key = C4, E key = C5)<br>
 		- play simple MML<br>
 		- play test SMF</p>
 	</header>
@@ -77,7 +76,9 @@
 	</div>
 		
 	<div class="rack" id="mml2smf">
-		<h2>MML2SMF</h2>
+		<h2>MMLtoSMF</h2>
+		<p>In this box, you can play simple MML code. Also it have function to make MML code to simple midi file. 
+		<br>Under the letterbox, there is commands to composit a simmple MML code.</p>
 		<textarea id="mml" type="text" spellcheck="false" style="width: 100%" rows="8" wrap="off">t140 o5l8q7 ccggaag4 ffeeddc4; o4l8 cgegcgeg >b<gfg>b<gc4</textarea><br>
 		<button onclick="playMML();">Play</button> <!--button onclick="tweetMML();">Tweet MML</button--> <button onclick="downloadMIDIFile('mml2smf.mid');">Download MIDI File</button>
 			
