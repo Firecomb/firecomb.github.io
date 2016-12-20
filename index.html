@@ -4,26 +4,27 @@
 	<title>CTP431 Final Project</title>
 <body>
 <h1> CTP 431 Final Project : Simple MML Player with FM Synthesizer</h1>
-<p> 2016 Fall CTP431 Final Project <br>
-I want to make some kind of score playing web api.
-Finding some 'score-like' things, I can find MML code. <br>
-MML is Music - Macro - Language. This code lines include note and length information as text. <br>
-Those MML Codes are using for in-Game music scoring, like 'Mabinogi' or 'Archeage'. <br>
-So I thought it is good to make web api based MML player, to listen the code before adapting it to game. <br>
-I referred following pre-made javascript MML player.<br>
+<h2>2016 Fall CTP431 Final Project, Han Gyuhyun</h2>
+<h3>Introduction</h3>
+<p>
+<br>
+Most of the web audio api actually use live input like MIDI, mouse click, and etc. It is hard to find web audio api <br>
+that can play some music 'score' from outside. So I thought it is good to make web based score player. <br>
+For music score format, I adopted MML, Macro-Music-Language. It contatins information about notes and length. <br>
+To play music, it need any sound source like sunth. Connecting MML parser to controllerable synthesizer, <br>
+user can play MML code with their own sound. </p>
+<br>
+<h3>Description</h3>
+<p>1. 
+<br>
+<br>
 
-<a href="https://framesynthesis.com/experiments/synthesis.js/examples/showcase/">
-https://framesynthesis.com/experiments/synthesis.js/examples/showcase/</a>
 
-<br>
-Using this parser, I must connect it to my FM Synthesizer(what I did as HW3).<br>
-This code make MML code to MIDI signal(midi num/velocity). So I connected this converted midi signal to FM Synthesizer. 
-<br>
-<br>
 Here is my work.
 <a href="https://firecomb.github.io/final project.html">https://firecomb.github.io/final project.html</a>
 <br>
-<br>
+<a href="https://framesynthesis.com/experiments/synthesis.js/examples/showcase/">
+https://framesynthesis.com/experiments/synthesis.js/examples/showcase/</a>
 </p>
 </body>
 </html>
