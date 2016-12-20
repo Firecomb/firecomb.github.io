@@ -10,24 +10,39 @@
 <br>
 Most of the web audio api actually use live input like MIDI, mouse click, and etc. It is hard to find web audio api <br>
 that can play some music 'score' from outside. So I thought it is good to make web based score player. <br>
-For music score format, I adopted MML, Macro-Music-Language. It contatins information about notes and length. <br>
-To play music, it need any sound source like sunth. Connecting MML parser to controllerable synthesizer, <br>
-user can play MML code with their own sound. </p>
+For music score format, I adopted MML, Macro-Music-Language. Some games like 'Mabinogi' or 'Archeage', uses those <br>
+kind of MML code to play the player's own music in game. It contains information about note and length.<br>
+As a form of text code, it have evrything of note. For this reason, I tryed to make MML code player.<br>
+<br>
+Actually, parsing algorithm of MML is very complicate. Thus I must use pre-made javascript base MML parser.<br>
+But this MML parser have only one simple synth. It need to make various sound. So I connected this MML parser<br>
+to controllable synthesizer, which we did as hw3. Using new synthesizer, finally it can play various sound.<br>
+</p>
 <br>
 <h3>Description</h3>
-<p>1. First set the synthesizer to your favorite sound. User can play the synth sound using keyboard. <br>
-<br>
-2. When the sound is satisfactory, now fill the MMLtoSMF box with your MML code. <br>
-<br>
-3. Click play button and listen music. You can also export MML code to simple MIDI file. <br>
+<h4>1. Sound Design </h4>
+<p>First set the synthesizer to your favorite sound. You can check the sound using external midi source,<br>
+virtual keyboard layout, or keyboard in front of you. C key is C4, and E key is C5.</p>
+<h4>2. Find and fill MML code</h4>
+<p>You can easily find MML code from internet. There are many songs like 'Auld Lang Syne', encrypted to MML code.<br>
+Fill the MMLtoSMF box with your MML code.</p>
+<h4>3. Play</h4>
+<p>Click play button and listen music. You can also export MML code to simple MIDI file. <br>
 </p>
-
-<p>
-Here is my work.
-<a href="https://firecomb.github.io/final project.html">https://firecomb.github.io/final project.html</a>
 <br>
+<p> Caution : There are some differences between MML codes. For instance, 'Mabinogi' MML code and 'Archeage' MML code<br>
+are slightly differen. So I recommend to follow MML code commands under the MML code letterbox</p>
+<br>
+<br>
+<br>
+<h3>Reference</h3>
 <a href="https://framesynthesis.com/experiments/synthesis.js/examples/showcase/">
-https://framesynthesis.com/experiments/synthesis.js/examples/showcase/</a>
-</p>
+https://framesynthesis.com/experiments/synthesis.js/examples/showcase/</a><br>
+<a href="https://github.com/juhannam/ctp431/tree/master/homework3">
+https://github.com/juhannam/ctp431/tree/master/homework3</a><br>
+<br>
+<br>
+<h2>My final work are following</h2>
+<a href="https://firecomb.github.io/final project.html">https://firecomb.github.io/final project.html</a>
 </body>
 </html>
